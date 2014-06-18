@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<game>
+	<category desc="Masonic Presidents">
+		<question text="He was the only President who was Master of his Lodge while in office." answer="Who was George Washington?" value="100" daily_double="false" />
+		<question text="He was a Freemason and U.S. President who established an important doctrine in 1823" answer="Who was James Monroe?" value="100" daily_double="false" />
+		<question text="He became a U.S. President in 1828, at the height of the anti-Masonic period." answer="Who was Andrew Jackson?" value="100" daily_double="false" />
+		<question text="This U.S. President and Freemason won the Nobel Peace Prize in 1906." answer="Who was Theodore Roosevelt?" value="100" daily_double="false" />
+		<question text="Leon Czolgosz ended this U.S. President's life in 1901." answer="Who was William McKinley?" value="100" daily_double="false" />
+	</category>
+	<category desc="Masonic Symbols">
+		<question text="A symbol of untimely death." answer="What is broken column?" value="100" daily_double="false" />
+		<question text="A symbol of industry and cooperation." answer="What is the beehive?" value="100" daily_double="false" />
+		<question text="A symbol of immortality and of faith." answer="What is acacia?" value="100" daily_double="false" />
+		<question text="Amos saw this symbol." answer="What is a plumbline?" value="100" daily_double="true" />
+		<question text="A symbol of honorable labor." answer="What is the Apron?" value="100" daily_double="false" />
+	</category>
+	<category desc="Masonic Ritual">
+		<question text="The hypotenuse of a right triangle is equal to the sum of the squares of the two legs." answer="What is the 47th Problem of Euclid?" value="100" daily_double="false" />
+		<question text="The Middle Chamber lecture refers to these two kinds of Mason.s" answer="What are operative and speculative Masons?" value="100" daily_double="false" />
+		<question text="Of the seven liberal arts and sciences this one is most revered by Masons." answer="What is geometry?" value="100" daily_double="false" />
+		<question text="This Lodge officer is armed with a weapon." answer="Who is the Tiler?" value="100" daily_double="false" />
+		<question text="A term applied to several raps of the gavel or clapping of the hands." answer="What is a battery?" value="100" daily_double="false" />
+	</category>
+	<category desc="The Middle Chamber">
+		<question text="Teaches the proper arrangements of words." answer="What is Grammar?" value="100" daily_double="true" />
+		<question text="Helps us to distinguish wholesome from nauseous foods" answer="What is Tasting?" value="100" daily_double="false" />
+		<question text="Teaches us to speak copiously and fluently." answer="What is Rhetoric?" value="100" daily_double="false" />
+		<question text="Teaches the art of forming concords." answer="What is Music?" value="100" daily_double="false" />
+		<question text="The most simple and solid of the five orders of Architecture." answer="What is the Tuscan?" value="100" daily_double="false" />
+	</category>
+	<category desc="Famous Authors and Composers">
+		<question text="This Mason composed the 'Magic Flute'." answer="Who was Wolfgang A. Mozart?" value="100" daily_double="false" />
+		<question text="This Mason wrote the book 'The Man Who Would Be King'." answer="Who was Gerald Ford?" value="100" daily_double="false" />
+		<question text="This Mason composed 'Finlandia'." answer="Who was Jean Sibelius?" value="100" daily_double="false" />
+		<question text="This Mason wrote 'Auld Lang Syne'." answer="Who was Robert Burns?" value="100" daily_double="false" />
+		<question text="This Mason wrote 'Faust'" answer="Who was Goethe?" value="100" daily_double="false" />
+	</category>
+	<final text="Name given to Fortitude, Prudence, Temperance, and Justice." topic="The Entered Apprentice degree" answer="What are the Four Cardinal Virtues?"/>
+</game>

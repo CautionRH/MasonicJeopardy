@@ -1,0 +1,141 @@
+﻿<Window x:Class="Jeopordy.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" WindowState="Maximized" ResizeMode="NoResize" WindowStyle="None" 
+        FontSize="24" FontFamily="Cooper Black" WindowStartupLocation="CenterScreen" >
+    <Window.Resources>
+        <DropShadowEffect x:Key="dropShadow" BlurRadius="0" ShadowDepth="5" Direction="315" />
+        <Style x:Key="TextBlockShadow" TargetType="TextBlock">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="Effect" Value="{StaticResource dropShadow}" />
+        </Style>
+    </Window.Resources>
+        <Grid Background="DarkBlue" >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+        
+            <MediaElement Name="AudioPlayer" LoadedBehavior="Manual"/>
+        <Rectangle Name="BlockQuestions" Fill="DarkBlue" Grid.Row="0" Grid.Column="0" Grid.RowSpan="6" Grid.ColumnSpan="5" />
+        <TextBlock Name="FinalJeopardyQuestion" Grid.Row="0" Grid.Column="0" Grid.RowSpan="6" Grid.ColumnSpan="5" 
+                   Visibility="Hidden" MouseLeftButtonUp="FinalJeopardyQuestion_MouseLeftButtonUp" 
+                   FontSize="72" Foreground="Yellow" Style="{StaticResource TextBlockShadow}" />
+            
+        <!-- Column 1-->
+            <Border Grid.Row="0" Grid.Column="0" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="CategoryText1" Text="Category1" Style="{StaticResource TextBlockShadow}" Foreground="White" />
+            </Border>
+            <Border Grid.Row="1" Grid.Column="0" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC1R1" Text="$100" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="0" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC1R2" Text="$200" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="0" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC1R3" Text="$300" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="4" Grid.Column="0" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC1R4" Text="$400" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="5" Grid.Column="0" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC1R5" Text="$500" Style="{StaticResource TextBlockShadow}" TextWrapping="Wrap" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+
+            <!-- Column 2-->
+            <Border Grid.Row="0" Grid.Column="1" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="CategoryText2" Text="Category1" Style="{StaticResource TextBlockShadow}" Foreground="White"/>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="1" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC2R1" Text="$100" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="1" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC2R2" Text="$200" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="1" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC2R3" Text="$300" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="4" Grid.Column="1" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC2R4" Text="$400" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="5" Grid.Column="1" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC2R5" Text="$500" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+        
+            <!-- Column 3-->
+            <Border Grid.Row="0" Grid.Column="2" BorderThickness="1" BorderBrush="Black">
+            <Viewbox StretchDirection="DownOnly" Stretch="Uniform">
+                <TextBlock Name="CategoryText3" Text="Category1" Style="{StaticResource TextBlockShadow}" Foreground="White"/>
+            </Viewbox>
+        </Border>
+            <Border Grid.Row="1" Grid.Column="2" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC3R1" Text="$100" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="2" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC3R2" Text="$200" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="2" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC3R3" Text="$300" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="4" Grid.Column="2" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC3R4" Text="$400" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="5" Grid.Column="2" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC3R5" Text="$500" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+
+            <!-- Column 4-->
+            <Border Grid.Row="0" Grid.Column="3" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="CategoryText4" Text="Category1" Style="{StaticResource TextBlockShadow}" Foreground="White"/>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="3" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC4R1" Text="$100" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="3" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC4R2" Text="$200" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="3" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC4R3" Text="$300" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="4" Grid.Column="3" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC4R4" Text="$400" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="5" Grid.Column="3" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC4R5" Text="$500" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+
+            <!-- Column 5-->
+            <Border Grid.Row="0" Grid.Column="4" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="CategoryText5" Text="Category1" Style="{StaticResource TextBlockShadow}" Foreground="White"/>
+            </Border>
+            <Border Grid.Row="1" Grid.Column="4" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC5R1" Text="$100" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="2" Grid.Column="4" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC5R2" Text="$200" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="3" Grid.Column="4" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC5R3" Text="$300" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="4" Grid.Column="4" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC5R4" Text="$400" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+            <Border Grid.Row="5" Grid.Column="4" BorderThickness="1" BorderBrush="Black">
+                <TextBlock Name="QuestionC5R5" Text="$500" Style="{StaticResource TextBlockShadow}" Foreground="Yellow" MouseLeftButtonUp="Question_MouseLeftButtonUp"/>
+            </Border>
+    
+        </Grid>
+</Window>
